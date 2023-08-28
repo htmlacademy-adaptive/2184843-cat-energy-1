@@ -3,14 +3,19 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
+  
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="logo" href="#">
-      <img class="logo__image" src="img/logo-mobile.svg" width="191" height="37" alt="Логотип Кэт Энерджи.">
+    <a class="logo main-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+        <img class="logo__image main-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи.">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
