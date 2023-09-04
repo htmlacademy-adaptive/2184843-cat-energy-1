@@ -7,3 +7,17 @@
   margin: 0;
   list-style-type: none;
 }
+
+@media (min-width: @tablet-width) {
+  .how-it-works__list {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .how-it-works__list {
+    grid-template-columns: 230px 246px 248px 250px;
+  }
+}
