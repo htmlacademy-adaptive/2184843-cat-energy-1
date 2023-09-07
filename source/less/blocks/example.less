@@ -3,12 +3,39 @@
   padding: 25px 20px 40px;
 }
 
+.example__title {
+  margin-bottom: 40px;
+}
+
+.example__text {
+  margin-bottom: 20px;
+}
+
+.example__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.example__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 124px;
+  border: 1px solid #cdcdcd;
+}
+
 .example__number {
   color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  padding: 0;
+  margin: 0 0 7px;
 }
 
 .example__description {
@@ -17,6 +44,8 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .example__cost-text {
@@ -26,4 +55,89 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: #ffffff;
+    padding: 0 30px;
+  }
+
+  .example__title {
+    margin-bottom: 63px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  .example__table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .example__list {
+    width: 366px;
+    margin: 0;
+  }
+
+  .example__item {
+    width: 162px;
+  }
+
+  .example__number {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 11px;
+  }
+
+  .example__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__cost-text {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    width: 175px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    padding: 0 110px;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__text {
+    width: 432px;
+    margin-bottom: 69px;
+  }
+
+  .example__list {
+    margin-bottom: 55px;
+  }
+
+  .example__table {
+    flex-direction: column;
+    width: 440px;
+    align-items: flex-start;
+  }
+
+  .example__cost-text {
+    text-align: left;
+    width: 100%;
+  }
 }

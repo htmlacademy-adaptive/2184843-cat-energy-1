@@ -1,6 +1,9 @@
 .cooperation {
   background-color: #ffffff;
   padding: 26px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .cooperation__title {
@@ -10,6 +13,9 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  width: 128px;
+  padding: 0;
+  margin: 0;
 }
 
 .cooperation__address {
@@ -19,4 +25,24 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  width: 139px;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .cooperation {
+    padding: 56px 70px;
+  }
+
+  .cooperation__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .cooperation__address {
+    font-size: 16px;
+    text-align: right;
+    width: 160px;
+  }
 }

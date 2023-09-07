@@ -9,6 +9,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: none;
 }
 
 .site-list__item {
@@ -53,5 +54,18 @@
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 800px;
+  }
+
+  .site-list__link {
+    /* color: #ffffff; */
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
   }
 }

@@ -1,0 +1,28 @@
+.social {
+  width: 100%;
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  padding: 20px 0;
+  list-style-type: none;
+  border-top: 1px solid rgb(217, 217, 217);
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.social__item {
+  width: 28px;
+  height: 22px;
+  background-color: #666666;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    border: none;
+    padding: 0;
+  }
+}

@@ -14,7 +14,7 @@
 
 .goals__item {
   background-color: rgb(242, 242, 242);
-  padding: 20px;
+  padding: 20px 20px 17px;
 }
 
 .goals__title {
@@ -24,8 +24,14 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
-  padding: 0;
-  margin: 0;
+  padding: 10px 0 0 72px;
+  margin: 0 0 30px 0;
+}
+
+.goals__description {
+  margin-bottom: 15px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .goals__link {
@@ -37,6 +43,38 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .goals {
+    padding: 0 30px;
+  }
+
+  .goals__item {
+    padding: 77px 27px 57px 53px;
+  }
+
+  .goals__title {
+    padding: 0;
+    margin: 0 0 24px;
+    max-width: 340px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .goals__description {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    margin: 0 0 52px;
+    padding: 0;
+  }
+
+  .goals__link {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -52,5 +90,16 @@
   .goals__item {
     width: 570px;
     box-sizing: border-box;
+    padding: 47px 60px 60px 52px;
+  }
+
+  .goals__title {
+    padding: 29px 0 0 162px;
+    margin-bottom: 73px;
+  }
+
+  .goals__description {
+    width: 100%;
+    margin-bottom: 27px;
   }
 }
