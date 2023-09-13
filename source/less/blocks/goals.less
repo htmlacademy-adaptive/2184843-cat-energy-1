@@ -15,6 +15,29 @@
 .goals__item {
   background-color: @basic-grey;
   padding: 20px 20px 17px;
+  position: relative;
+
+  &--slim::before {
+    content: "";
+    background-image: url("../img/cat-slim_icon.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 53px;
+    top: 20px;
+    left: 23px;
+  }
+
+  &--pro::before {
+    content: "";
+    background-image: url("../img/cat-pro_icon.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 67px;
+    height: 50px;
+    top: 25px;
+    left: 15px;
+  }
 }
 
 .goals__title {
@@ -50,8 +73,32 @@
     padding: 0 30px;
   }
 
+  .goals__list {
+    gap: 30px 0;
+  }
+
   .goals__item {
     padding: 77px 27px 57px 53px;
+
+    &--slim::before {
+      background-size: contain;
+      position: absolute;
+      width: 200px;
+      height: 211px;
+      top: 80px;
+      right: 61px;
+      left: auto;
+    }
+
+    &--pro::before {
+      background-size: contain;
+      position: absolute;
+      width: 268px;
+      height: 200px;
+      top: 90px;
+      right: 25px;
+      left: auto;
+    }
   }
 
   .goals__title {
