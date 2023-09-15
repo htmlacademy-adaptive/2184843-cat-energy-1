@@ -13,30 +13,115 @@
 }
 
 .goals__item {
-  background-color: rgb(242, 242, 242);
-  padding: 20px;
+  background-color: @basic-grey;
+  padding: 20px 20px 17px;
+  position: relative;
+
+  &--slim::before {
+    content: "";
+    background-image: url("../img/cat-slim_icon.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 53px;
+    top: 20px;
+    left: 23px;
+  }
+
+  &--pro::before {
+    content: "";
+    background-image: url("../img/cat-pro_icon.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 67px;
+    height: 50px;
+    top: 25px;
+    left: 15px;
+  }
 }
 
 .goals__title {
-  color: #000000;
-  font-family: "Oswald", sans-serif;
+  color: @black;
+  font-family: @Oswald;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
-  padding: 0;
-  margin: 0;
+  padding: 10px 0 0 72px;
+  margin: 0 0 30px 0;
+}
+
+.goals__description {
+  margin-bottom: 15px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid @border-grey;
 }
 
 .goals__link {
-  color: #000000;
+  color: @black;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: @Oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .goals {
+    padding: 0 30px;
+  }
+
+  .goals__list {
+    gap: 30px 0;
+  }
+
+  .goals__item {
+    padding: 77px 27px 57px 53px;
+
+    &--slim::before {
+      background-size: contain;
+      position: absolute;
+      width: 200px;
+      height: 211px;
+      top: 80px;
+      right: 61px;
+      left: auto;
+    }
+
+    &--pro::before {
+      background-size: contain;
+      position: absolute;
+      width: 268px;
+      height: 200px;
+      top: 90px;
+      right: 25px;
+      left: auto;
+    }
+  }
+
+  .goals__title {
+    padding: 0;
+    margin: 0 0 24px;
+    max-width: 340px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .goals__description {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    margin: 0 0 52px;
+    padding: 0;
+  }
+
+  .goals__link {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -52,5 +137,16 @@
   .goals__item {
     width: 570px;
     box-sizing: border-box;
+    padding: 47px 60px 60px 52px;
+  }
+
+  .goals__title {
+    padding: 29px 0 0 162px;
+    margin-bottom: 73px;
+  }
+
+  .goals__description {
+    width: 100%;
+    margin-bottom: 27px;
   }
 }

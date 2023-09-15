@@ -2,21 +2,147 @@
   padding: 0 20px;
 }
 
+.how-it-works__title {
+  margin-bottom: 43px;
+}
+
 .how-it-works__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 26px 0;
+}
+
+.how-it-works__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: @basic-green;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -2px;
+    left: 1px;
+  }
+
+  /* Лист */
+  &--leaf::before {
+    content: "";
+    background-image: url("../img/leaf_icon.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 32px;
+    top: 15px;
+    left: 20px;
+    z-index: 2;
+  }
+
+  /* Вода */
+  &--water::before {
+    content: "";
+    background-image: url("../img/water_icon.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 32px;
+    top: 14px;
+    left: 19px;
+    z-index: 2;
+  }
+
+  /* Питание */
+  &--eat::before {
+    content: "";
+    background-image: url("../img/eat_icon.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 32px;
+    top: 14px;
+    left: 19px;
+    z-index: 2;
+  }
+
+  /* Часы */
+  &--clock::before {
+    content: "";
+    background-image: url("../img/clock_icon.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 32px;
+    top: 14px;
+    left: 19px;
+    z-index: 2;
+  }
+}
+
+.how-it-works__text {
+  padding-left: 80px;
 }
 
 @media (min-width: @tablet-width) {
+  .how-it-works {
+    padding: 0 30px 47px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .how-it-works__title {
+    margin-bottom: 32px;
+  }
+
   .how-it-works__list {
     display: grid;
-    grid-template-columns: 250px 250px;
+    grid-template-columns: 250px 323px;
     justify-content: space-between;
+    gap: 37px 0;
+  }
+
+  .how-it-works__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 280px;
+
+    &::after {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+      left: 0;
+    }
+
+    &--leaf::before,
+    &--water::before,
+    &--eat::before,
+    &--clock::before {
+      content: "";
+      top: 66px;
+      left: 28px;
+    }
+  }
+
+  .how-it-works__text {
+    padding: 150px 0 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .how-it-works {
+    padding: 0 110px;
+    border: none;
+  }
+
+  .how-it-works__title {
+    margin-bottom: 32px;
+  }
+
   .how-it-works__list {
     grid-template-columns: 230px 246px 248px 250px;
   }

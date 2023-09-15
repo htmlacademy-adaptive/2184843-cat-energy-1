@@ -1,7 +1,6 @@
 .main-header {
-  font-family: "Oswald", sans-serif;
-  color: #000000;
-  background-color: #ffffff;
+  font-family: @Oswald;
+  color: @black;
   padding: 64px 0 0;
   position: relative;
   background: url("../img/logo-mobile-text.svg") no-repeat center 23px;
@@ -22,7 +21,7 @@
   }
 
   .main-header__wrapper {
-    padding-bottom: 62px;
+    margin-bottom: 60px;
   }
 
   .main-header__logo {
@@ -33,5 +32,16 @@
 
   .main-header__logo-image {
     padding-top: 3px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__wrapper {
+    width: 1220px;
+    margin: 53px auto 106px;
+  }
+
+  .main-header__logo-image {
+    padding: 0;
   }
 }

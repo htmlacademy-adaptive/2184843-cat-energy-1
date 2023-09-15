@@ -1,7 +1,22 @@
 .main-footer {
-  background-color: #f2f2f2;
+  background-color: @basic-grey;
 }
 
 .main-footer__wrapper {
   padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px 0;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: grid;
+    grid-template-columns: 143px 265px 168px;
+    justify-content: space-between;
+    gap: 0;
+    padding: 55px 30px;
+  }
 }
