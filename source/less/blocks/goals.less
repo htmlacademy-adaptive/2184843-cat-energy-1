@@ -126,7 +126,10 @@
 
 @media (min-width: @desktop-width) {
   .goals {
-    padding: 0 110px;
+    padding: 0;
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .goals__list {
@@ -138,6 +141,22 @@
     width: 570px;
     box-sizing: border-box;
     padding: 47px 60px 60px 52px;
+
+    &--slim::before {
+      width: 100px;
+      height: 106px;
+      top: 40px;
+      right: auto;
+      left: 52px;
+    }
+
+    &--pro::before {
+      width: 134px;
+      height: 100px;
+      top: 45px;
+      right: auto;
+      left: 35px;
+    }
   }
 
   .goals__title {
