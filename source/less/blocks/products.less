@@ -68,7 +68,7 @@
     background-color: @basic-grey;
     flex-direction: column;
     align-items: center;
-    padding-top: 122px;
+    padding: 122px 37px 40px;
     position: relative;
     width: auto;
   }
@@ -112,5 +112,13 @@
     font-size: 16px;
     line-height: 18px;
     width: 170px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products__list {
+    width: 1220px;
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 144px 80px;
   }
 }
