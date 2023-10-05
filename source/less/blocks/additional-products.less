@@ -87,3 +87,28 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .additional-products__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 0 80px;
+  }
+
+  .additional-products__item-wrapper {
+    flex-direction: row;
+  }
+  .additional-products__item {
+    display: grid;
+    grid-template-columns: 610px 244px;
+    border-left: none;
+    border-right: none;
+    padding: 15px 0;
+  }
+
+  .additional-products__item .products__title {
+    align-self: center;
+  }
+}
