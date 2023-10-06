@@ -90,7 +90,7 @@
         </fieldset>
 
         <fieldset class="form__group form__contacts-group contacts-group">
-          <legend class="form-group__title">Контактные данные (владельца кота)</legend>
+          <legend class="form__group-title">Контактные данные (владельца&nbsp;кота)</legend>
           <ul class="form__list contacts-group__list">
             <li class="text-input contacts-group__item">
               <label for="e-mail" class="text-input__label">E-mail:*</label>
@@ -106,13 +106,13 @@
         </fieldset>
 
         <fieldset class="form__group form__comment-group comment-group">
-          <legend class="form-group__title">Комментарий</legend>
+          <legend class="form__group-title">Комментарий</legend>
           <label class="visually-hidden" for="comment">Заполните поле.</label>
-          <textarea id="comment" name="comment" rows="5" cols="33">Расскажите обо всех повадках кота</textarea>
+          <textarea class="comment-group__textarea" id="comment" name="comment" rows="5" cols="33">Расскажите обо всех повадках кота</textarea>
         </fieldset>
 
         <fieldset class="form__group form__additional-items-group additional-items-group">
-          <legend class="form-group__title">Дополнительно</legend>
+          <legend class="form__group-title">Дополнительно</legend>
           <ul class="form__list additional-items-group__list">
             <li class="additional-items-group__item">
               <label class="control">
@@ -145,14 +145,14 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button" type="submit">отправить заявку</button>
-        <p>* — Обязательные поля</p>
+        <button class="button form__button" type="submit">отправить заявку</button>
+        <p class="form__text">* — Обязательные поля</p>
       </form>
     </section>
 
   </main>
   <footer class="main-footer">
-    <section class="cooperation main-footer__cooperation">
+    <section class="cooperation main-footer__cooperation cooperation--form">
       <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
       <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
     </section>
