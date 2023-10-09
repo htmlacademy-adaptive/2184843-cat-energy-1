@@ -9,3 +9,27 @@
 .contacts-group__item:not(:last-child) {
   margin-bottom: 14px;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts-group {
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-group {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacts-group__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts-group__item {
+    width: 570px;
+  }
+}

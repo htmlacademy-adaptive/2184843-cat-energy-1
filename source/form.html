@@ -44,50 +44,52 @@
         </span>
       </p>
       <form class="form__container" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__group form__name-group name-group">
-          <legend class="visually-hidden">Данные питомца.</legend>
-          <ul class="form__list name-group__list">
-            <li class="text-input name-group__item">
-              <label for="name" class="text-input__label">Имя:*</label>
-              <input type="text" class="text-input__input" name="name" id="name" placeholder="Барсик" required>
-            </li>
-            <li class="text-input name-group__item">
-              <label for="weight" class="text-input__label">Вес (кг):*</label>
-              <input type="number" class="text-input__input" name="weight" id="weight" placeholder="7" required>
-            </li>
-            <li class="text-input name-group__item">
-              <label for="age" class="text-input__label">Возраст (лет):</label>
-              <input type="number" class="text-input__input" name="age" id="age" placeholder="7">
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__group-wrapper">
+          <fieldset class="form__group form__name-group name-group">
+            <legend class="visually-hidden">Данные питомца.</legend>
+            <ul class="form__list name-group__list">
+              <li class="text-input name-group__item">
+                <label for="name" class="text-input__label">Имя:*</label>
+                <input type="text" class="text-input__input" name="name" id="name" placeholder="Барсик" required>
+              </li>
+              <li class="text-input name-group__item">
+                <label for="weight" class="text-input__label">Вес (кг):*</label>
+                <input type="number" class="text-input__input" name="weight" id="weight" placeholder="7" required>
+              </li>
+              <li class="text-input name-group__item">
+                <label for="age" class="text-input__label">Возраст (лет):</label>
+                <input type="number" class="text-input__input" name="age" id="age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="form__group form__goal-group goal-group">
-          <legend class="visually-hidden">Выберите цель.</legend>
-          <ul class="form__list goal-group__list">
-            <li class="goal-group__item">
-              <label class="control">
-                <input class="control__input" type="radio" name="Goal" value="Похудение" checked>
-                <span class="control__mark"></span>
-                <span class="control__label">Похудение</span>
-              </label>
-            </li>
-            <li class="goal-group__item">
-              <label class="control">
-                <input class="control__input" type="radio" name="Goal" value="Набор массы">
-                <span class="control__mark"></span>
-                <span class="control__label">Набор массы</span>
-              </label>
-            </li>
-            <li class="goal-group__item">
-              <label class="control">
-                <input class="control__input" type="radio" name="Goal" value="Не знаю">
-                <span class="control__mark"></span>
-                <span class="control__label">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="form__group form__goal-group goal-group">
+            <legend class="visually-hidden">Выберите цель.</legend>
+            <ul class="form__list goal-group__list">
+              <li class="goal-group__item">
+                <label class="control">
+                  <input class="control__input" type="radio" name="Goal" value="Похудение" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Похудение</span>
+                </label>
+              </li>
+              <li class="goal-group__item">
+                <label class="control">
+                  <input class="control__input" type="radio" name="Goal" value="Набор массы">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="goal-group__item">
+                <label class="control">
+                  <input class="control__input" type="radio" name="Goal" value="Не знаю">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
         <fieldset class="form__group form__contacts-group contacts-group">
           <legend class="form__group-title">Контактные данные (владельца&nbsp;кота)</legend>
@@ -108,7 +110,8 @@
         <fieldset class="form__group form__comment-group comment-group">
           <legend class="form__group-title">Комментарий</legend>
           <label class="visually-hidden" for="comment">Заполните поле.</label>
-          <textarea class="comment-group__textarea" id="comment" name="comment" rows="5" cols="33">Расскажите обо всех повадках кота</textarea>
+          <textarea class="comment-group__textarea" id="comment" name="comment" rows="5"
+            cols="33">Расскажите обо всех повадках кота</textarea>
         </fieldset>
 
         <fieldset class="form__group form__additional-items-group additional-items-group">
@@ -145,8 +148,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button form__button" type="submit">отправить заявку</button>
-        <p class="form__text">* — Обязательные поля</p>
+        <div class="form__button-wrapper">
+          <button class="button form__button" type="submit">отправить заявку</button>
+          <p class="form__text">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
 
