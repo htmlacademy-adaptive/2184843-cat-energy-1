@@ -1,0 +1,115 @@
+.additional-products__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0 20px;
+  margin: 0 0 36px;
+}
+
+.additional-products__list {
+  margin: 0 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.additional-products__item {
+  padding: 13px 0 19px;
+  border-top: 1px solid #cdcdcd;
+}
+
+.additional-products__item:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional-products__item .products__title {
+  width: 280px;
+  margin-bottom: 13px;
+}
+
+.additional-products__term-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 15px;
+  color: @dark-grey;
+  font-family: @Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.additional-products__button {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-products {
+    padding: 0 30px;
+  }
+
+  .additional-products__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+    margin-bottom: 80px;
+  }
+
+  .additional-products__list {
+    margin: 0 0 70px;
+  }
+
+  .additional-products__item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .additional-products__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 26px 38px 28px;
+    gap: 22px 0;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  .additional-products__term-list {
+    margin: 5px 0 0;
+    align-self: center;
+  }
+
+  .additional-products__item .products__title {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-products__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 0 80px;
+  }
+
+  .additional-products__item-wrapper {
+    flex-direction: row;
+  }
+
+  .additional-products__item {
+    display: grid;
+    grid-template-columns: 610px 244px;
+    border-left: none;
+    border-right: none;
+    padding: 15px 0;
+  }
+
+  .additional-products__item .products__title {
+    align-self: center;
+  }
+}

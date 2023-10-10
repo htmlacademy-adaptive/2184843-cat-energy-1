@@ -1,0 +1,25 @@
+.goal-group {
+  padding: 22px 20px 19px;
+  border-top: 1px solid @border-grey;
+  border-bottom: 1px solid @border-grey;
+  box-sizing: border-box;
+}
+
+.goal-group__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .goal-group {
+    width: 628px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid @border-grey;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .goal-group {
+    width: 100%;
+  }
+}

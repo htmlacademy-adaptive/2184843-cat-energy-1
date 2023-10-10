@@ -1,0 +1,136 @@
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.products__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px 25px;
+  width: 320px;
+  box-sizing: border-box;
+  border-top: 1px solid #ebebeb;
+}
+
+.products__image {
+  align-self: center;
+}
+
+.products__title {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 76px;
+  margin: 0 0 14px;
+}
+
+.products__button {
+  width: 100%;
+  margin-top: 17px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.products__item--show-more {
+  justify-content: center;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.products__item--show-more .products__title {
+  width: 100%;
+  text-align: center;
+  padding-top: 78px;
+  margin-bottom: 8px;
+}
+
+.products__text {
+  color: @dark-grey;
+  text-align: center;
+  font-family: @Lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0 0 21px;
+}
+
+@media (min-width: @tablet-width) {
+  .products__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    width: 708px;
+    gap: 141px 60px;
+    margin: 0 auto;
+  }
+
+  .products__item {
+    border: none;
+    background-color: @basic-grey;
+    flex-direction: column;
+    align-items: center;
+    padding: 122px 37px 40px;
+    position: relative;
+    width: auto;
+  }
+
+  .products__image {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top: -90px;
+    left: 80px;
+  }
+
+  .products__title {
+    font-size: 20px;
+    line-height: 24px;
+    width: 135px;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  .products__description-list {
+    margin-bottom: 62px;
+  }
+
+  .products__button {
+    margin-top: 32px;
+  }
+
+  .products__item--show-more {
+    background-color: transparent;
+    border: 2px solid @basic-grey;
+  }
+
+  .products__item--show-more .products__title {
+    width: 170px;
+    margin-bottom: 23px;
+    padding: 0;
+  }
+
+  .products__text {
+    font-size: 16px;
+    line-height: 18px;
+    width: 170px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products__list {
+    width: 1220px;
+    grid-template-columns: 245px 245px 245px 245px;
+    gap: 144px 80px;
+  }
+
+  .products__image {
+    left: 45px;
+  }
+
+  .products__button {
+    margin-top: 37px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,29 @@
+.additional-items-group {
+  padding: 26px 20px 19px;
+}
+
+.additional-items-group__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-items-group {
+    padding: 0 70px;
+  }
+
+  .additional-items-group__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-items-group {
+    padding: 0 110px;
+  }
+
+  .additional-items-group__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

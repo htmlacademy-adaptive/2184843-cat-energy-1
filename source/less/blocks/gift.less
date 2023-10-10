@@ -1,0 +1,70 @@
+.gift {
+  width: 280px;
+  height: 290px;
+  margin: 20px;
+  background-color: @basic-green;
+  background-image: url("../img/gift-cat-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-cat-mobile@2x.jpg");
+  }
+}
+
+.gift-text {
+  color: @white;
+  text-align: center;
+  font-family: @Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 161px;
+  padding-top: 187px;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .gift {
+    width: 707px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: right;
+    background-image: url("../img/gift-cat-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-cat-tablet@2x.jpg");
+    }
+  }
+
+  .gift-text {
+    padding: 0;
+    text-align: left;
+    margin-right: 125px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift {
+    width: 245px;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 43px;
+    box-sizing: border-box;
+    background-image: url("../img/gift-cat-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-cat-desktop@2x.jpg");
+    }
+  }
+
+  .gift-text {
+    text-align: center;
+    margin: 0;
+  }
+}

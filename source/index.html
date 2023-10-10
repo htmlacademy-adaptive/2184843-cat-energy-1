@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml"> <!-- svg -->
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -84,34 +88,38 @@
     </section>
     <section class="example">
       <h2 class="example__title title">Живой пример</h2>
-      <p class="example__text description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-        Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
-        по-прежнему спит по 16 часов в день.</p>
-      <div class="example__table">
-        <dl class="example__list">
-          <div class="example__item">
-            <dt class="example__number">5 кг</dt>
-            <dd class="example__description">снижение веса</dd>
+      <div class="example__wrapper">
+        <div class="example__content-wrapper">
+          <p class="example__text description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+            по-прежнему спит по 16 часов в день.</p>
+          <div class="example__table">
+            <dl class="example__list">
+              <div class="example__item">
+                <dt class="example__number">5 кг</dt>
+                <dd class="example__description">снижение веса</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__number">60 дней</dt>
+                <dd class="example__description">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="example__cost-text">Затраты на питание: <span class="example__price">15 000 РУБ. </span></p>
           </div>
-          <div class="example__item">
-            <dt class="example__number">60 дней</dt>
-            <dd class="example__description">затрачено времени</dd>
+          <div class="cat-slider">
+            <button class="cat-slider__button">
+              <span class="visually-hidden">Сравнить.</span>
+            </button>
+            <img class="cat-slider__image" src="img/cat-slider.png" width="280" height="256" alt="Коты">
           </div>
-        </dl>
-        <p class="example__cost-text">Затраты на питание: <span class="example__price">15 000 РУБ. </span></p>
-      </div>
-      <div class="cat-slider">
-        <button class="cat-slider__button">
-          <span class="visually-hidden">Сравнить.</span>
-        </button>
-        <img class="cat-slider__image" src="img/cat-slider.png" width="280" height="256" alt="Коты">
+        </div>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <section class="cooperation">
-      <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+    <section class="cooperation main-footer__cooperation">
+      <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+      <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Как нас найти.</h2>

@@ -1,0 +1,35 @@
+.inner-text {
+  padding: 0;
+  margin: 0 20px;
+  color: @black;
+  font-family: @Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.inner-text__text {
+  max-width: 260px;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .inner-text {
+    margin: 0 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .inner-text__text {
+    max-width: 360px;
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-text {
+    margin: 0 auto;
+    width: 1220px;
+  }
+}
