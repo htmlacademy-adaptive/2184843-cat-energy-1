@@ -7,7 +7,9 @@
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml"> <!-- svg -->
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -70,21 +72,21 @@
             <ul class="form__list goal-group__list">
               <li class="goal-group__item">
                 <label class="control">
-                  <input class="control__input" type="radio" name="Goal" value="Похудение" checked>
+                  <input class="control__input visually-hidden" type="radio" name="Goal" value="Похудение" checked>
                   <span class="control__mark"></span>
                   <span class="control__label">Похудение</span>
                 </label>
               </li>
               <li class="goal-group__item">
                 <label class="control">
-                  <input class="control__input" type="radio" name="Goal" value="Набор массы">
+                  <input class="control__input visually-hidden" type="radio" name="Goal" value="Набор массы">
                   <span class="control__mark"></span>
                   <span class="control__label">Набор массы</span>
                 </label>
               </li>
               <li class="goal-group__item">
                 <label class="control">
-                  <input class="control__input" type="radio" name="Goal" value="Не знаю">
+                  <input class="control__input visually-hidden" type="radio" name="Goal" value="Не знаю">
                   <span class="control__mark"></span>
                   <span class="control__label">Не знаю (Нужен ваш совет)</span>
                 </label>
@@ -121,21 +123,21 @@
           <ul class="form__list additional-items-group__list">
             <li class="additional-items-group__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="additional-items" value="Сахарозаменитель" checked>
+                <input class="control__input visually-hidden" type="checkbox" name="additional-items" value="Сахарозаменитель" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Сахарозаменитель</span>
               </label>
             </li>
             <li class="additional-items-group__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="additional-items" value="Питьевая вода">
+                <input class="control__input visually-hidden" type="checkbox" name="additional-items" value="Питьевая вода">
                 <span class="control__mark"></span>
                 <span class="control__label">Питьевая вода</span>
               </label>
             </li>
             <li class="additional-items-group__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="additional-items" value="Молоко">
+                <input class="control__input visually-hidden" type="checkbox" name="additional-items" value="Молоко">
                 <span class="control__mark"></span>
                 <span class="control__label">Молоко</span>
               </label>
@@ -143,7 +145,7 @@
 
             <li class="additional-items-group__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="additional-items" value="Витамины">
+                <input class="control__input visually-hidden" type="checkbox" name="additional-items" value="Витамины">
                 <span class="control__mark"></span>
                 <span class="control__label">Витамины</span>
               </label>
