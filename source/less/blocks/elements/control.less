@@ -20,11 +20,11 @@
   position: relative;
 }
 
-.control__input[type="radio"]+.control__mark {
+.control__input[type="radio"] + .control__mark {
   border-radius: 50%;
 }
 
-.control__input[type="radio"]:checked+.control__mark::before {
+.control__input[type="radio"]:checked + .control__mark::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -35,7 +35,7 @@
   border-radius: 50%;
 }
 
-.control__input[type="checkbox"]:checked+.control__mark::before {
+.control__input[type="checkbox"]:checked + .control__mark::before {
   content: "";
   position: absolute;
   top: 8px;
