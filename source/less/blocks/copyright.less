@@ -8,6 +8,7 @@
 .copyright__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   width: 100%;
 }
@@ -19,4 +20,16 @@
   font-weight: 400;
   padding: 0;
   margin: 0;
+}
+
+.copyright__html-academy-icon {
+  fill: @special-grey;
+}
+
+.copyright__link:hover .copyright__html-academy-icon {
+  fill: @basic-green;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }
