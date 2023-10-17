@@ -21,6 +21,7 @@
     content: "";
     background-image: url("../img/cat-slim_icon.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     width: 50px;
     height: 53px;
@@ -32,6 +33,7 @@
     content: "";
     background-image: url("../img/cat-pro_icon.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     width: 67px;
     height: 50px;
@@ -66,6 +68,30 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    mask-image: url(../img/stack.svg#arrow-right);
+    background-color: @black;
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    z-index: 100000;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -50px;
+  }
+
+  &:hover::after{
+    mask-image: url(../img/stack.svg#arrow-right-long);
+    width: 32px;
+    right: -58px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -81,7 +107,6 @@
     padding: 77px 27px 57px 53px;
 
     &--slim::before {
-      background-size: contain;
       position: absolute;
       width: 200px;
       height: 211px;
@@ -91,12 +116,11 @@
     }
 
     &--pro::before {
-      background-size: contain;
       position: absolute;
       width: 268px;
       height: 200px;
-      top: 90px;
-      right: 25px;
+      top: 93px;
+      right: 30px;
       left: auto;
     }
   }

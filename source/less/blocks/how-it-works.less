@@ -30,55 +30,31 @@
   }
 
   /* Лист */
-  &--leaf::before {
-    content: "";
+  &--leaf::after {
     background-image: url("../img/leaf_icon.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    width: 30px;
-    height: 32px;
-    top: 15px;
-    left: 20px;
-    z-index: 2;
+    background-position: center;
   }
 
   /* Вода */
-  &--water::before {
-    content: "";
+  &--water::after {
     background-image: url("../img/water_icon.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    width: 30px;
-    height: 32px;
-    top: 14px;
-    left: 19px;
-    z-index: 2;
+    background-position: center;
   }
 
   /* Питание */
-  &--eat::before {
-    content: "";
+  &--eat::after {
     background-image: url("../img/eat_icon.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    width: 30px;
-    height: 32px;
-    top: 14px;
-    left: 19px;
-    z-index: 2;
+    background-position: center;
   }
 
   /* Часы */
-  &--clock::before {
-    content: "";
+  &--clock::after {
     background-image: url("../img/clock_icon.svg");
     background-repeat: no-repeat;
-    position: absolute;
-    width: 30px;
-    height: 32px;
-    top: 14px;
-    left: 19px;
-    z-index: 2;
+    background-position: center;
   }
 }
 
@@ -126,10 +102,63 @@
     }
   }
 
+  .how-it-works__item:first-child::before {
+    content: "1";
+    position: absolute;
+    color: @basic-grey;
+    font-family: @Oswald;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    z-index: -1;
+    top: 0;
+    left: 118px;
+  }
+
+  .how-it-works__item:nth-child(2)::before {
+    content: "2";
+    position: absolute;
+    color: @basic-grey;
+    font-family: @Oswald;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    z-index: -1;
+    top: 0;
+    left: 110px;
+  }
+
+  .how-it-works__item:nth-child(3)::before {
+    content: "3";
+    position: absolute;
+    color: @basic-grey;
+    font-family: @Oswald;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    z-index: -1;
+    top: 0;
+    left: 113px;
+  }
+
+  .how-it-works__item:nth-child(4)::before {
+    content: "4";
+    position: absolute;
+    color: @basic-grey;
+    font-family: @Oswald;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    z-index: -1;
+    top: 0;
+    left: 113px;
+  }
+
   .how-it-works__text {
     padding: 150px 0 0;
     font-size: 16px;
     line-height: 24px;
+    width: 250px;
   }
 }
 

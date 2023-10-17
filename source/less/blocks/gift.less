@@ -9,6 +9,18 @@
   background-position: center;
   display: flex;
   justify-content: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    mask-image: url(../img/stack.svg#present-icon);
+    background-color: @white;
+    width: 78px;
+    height: 80px;
+    position: absolute;
+    z-index: 100;
+    top: 58px;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/gift-cat-mobile@2x.jpg");
