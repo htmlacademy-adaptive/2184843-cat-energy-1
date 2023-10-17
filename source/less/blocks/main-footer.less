@@ -11,6 +11,18 @@
   align-items: center;
 }
 
+.main-footer__logo {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-footer__wrapper {
     display: grid;
@@ -37,6 +49,8 @@
   }
 
   .main-footer__wrapper {
-    padding: 68px 110px;
+    padding: 68px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
