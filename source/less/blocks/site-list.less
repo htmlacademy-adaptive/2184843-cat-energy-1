@@ -64,14 +64,17 @@
     width: 800px;
   }
 
-  /* .site-list__item--current {
-    border-bottom: 2px solid @white;
-  } */
-
   .site-list__link {
-    /* color: @white; */
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
+  }
+
+  .site-list--index .site-list__link {
+    color: @white;
+  }
+
+  .site-list--index .site-list__item--current {
+    border-color: @white;
   }
 }
