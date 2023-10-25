@@ -1,6 +1,27 @@
 .text-input {
   display: flex;
   gap: 15px;
+  position: relative;
+
+  &--email::after {
+    content: "";
+    position: absolute;
+    background: url("../img/email-icon.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
+    right: 14px;
+    top: 12px;
+  }
+
+  &--phone::after {
+    content: "";
+    position: absolute;
+    background: url("../img/phone-icon.svg") no-repeat center;
+    width: 20px;
+    height: 20px;
+    right: 14px;
+    top: 12px;
+  }
 }
 
 .text-input__label {
@@ -21,6 +42,9 @@
   padding: 0 10px;
   box-sizing: border-box;
   display: block;
+  font-family: @Oswald;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .text-input__input::placeholder {

@@ -56,6 +56,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .cooperation {
+    box-sizing: border-box;
+    width: 565px;
+    min-height: 200px;
+    padding: 60px 80px;
+  }
+
   .cooperation--catalog {
     background-color: @white;
   }
@@ -78,5 +85,14 @@
   .cooperation__address span {
     display: block;
     margin-top: 15px;
+  }
+
+  .cooperation__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

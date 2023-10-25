@@ -1,0 +1,25 @@
+.special-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+
+  & span {
+    background-color: @white;
+    padding: 0 20px;
+  }
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: @basic-green;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    z-index: -1;
+  }
+}
