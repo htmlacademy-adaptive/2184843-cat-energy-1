@@ -52,6 +52,10 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-cat-tablet@2x.jpg");
     }
+
+    &::after {
+      left: 78px;
+    }
   }
 
   .gift-text {
@@ -64,6 +68,7 @@
 @media (min-width: @desktop-width) {
   .gift {
     width: 245px;
+    height: 100%;
     justify-content: center;
     align-items: flex-end;
     padding: 43px;

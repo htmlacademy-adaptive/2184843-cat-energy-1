@@ -39,9 +39,14 @@
 @media (min-width: @desktop-width) {
   .main-header__wrapper {
     width: 1220px;
-    margin: 53px auto 106px;
+    margin: 53px auto 0;
+    z-index: 10;
 
     &--catalog {
+      margin-bottom: 74px;
+    }
+
+    &--form {
       margin-bottom: 72px;
     }
   }

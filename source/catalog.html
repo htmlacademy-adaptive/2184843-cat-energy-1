@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml"> <!-- svg -->
   <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
@@ -206,8 +206,8 @@
         </li>
       </ul>
     </section>
-    <section class="additional-products">
-      <h2 class="additional-products__title">Дополнительные товары</h2>
+    <section class="additional-products page-catalog__additional-products">
+      <h2 class="special-title additional-products__title"><span>Дополнительные товары</span></h2>
       <div class="additional-products__wrapper">
         <ul class="additional-products__list">
           <li class="additional-products__item">
@@ -258,10 +258,12 @@
     </section>
   </main>
   <footer class="main-footer page-catalog__footer">
-    <section class="cooperation  main-footer__cooperation cooperation--catalog">
-      <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
+    <div class="cooperation__wrapper">
+      <section class="cooperation main-footer__cooperation cooperation--catalog">
+      <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
       <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
     </section>
+    </div>
     <section class="map">
       <h2 class="visually-hidden">Как нас найти.</h2>
       <iframe
@@ -311,7 +313,7 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

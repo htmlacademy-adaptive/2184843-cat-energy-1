@@ -80,7 +80,7 @@
     z-index: 100000;
     top: 50%;
     transform: translateY(-50%);
-    right: -50px;
+    right: -40px;
   }
 
   &:hover::after{
@@ -145,8 +145,13 @@
   .goals__link {
     font-size: 20px;
     line-height: normal;
+
+    &::after {
+      right: -48px;
+    }
   }
 }
+
 
 @media (min-width: @desktop-width) {
   .goals {

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml"> <!-- svg -->
   <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
@@ -21,11 +21,11 @@
         <img class="logo__image main-header__logo-image" src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи.">
       </picture>
     </a>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--index main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list site-list--index">
         <li class="site-list__item site-list__item--current">
           <a class="site-list__link">Главная</a>
         </li>
@@ -40,13 +40,15 @@
   </header>
   <main class="main-container main-index">
     <section class="promo main-index__promo">
-      <div class="promo__wrapper">
-        <div class="promo__block">
-          <h1 class="promo__title title">Функциональное питание для котов</h1>
-          <p class="promo__description">Занялся собой? Займись котом!</p>
+      <div class="promo__container">
+        <div class="promo__wrapper">
+          <div class="promo__block">
+            <h1 class="promo__title title">Функциональное питание для котов</h1>
+            <p class="promo__description">Занялся собой? Займись котом!</p>
+          </div>
         </div>
+        <a class="promo__button button" href="form.html">Подобрать программу</a>
       </div>
-      <a class="promo__button button" href="form.html">Подобрать программу</a>
     </section>
     <section class="goals main-index__goals">
       <h2 class="visually-hidden">Выберите цель:</h2>
@@ -117,10 +119,12 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="cooperation main-footer__cooperation">
+    <div class="cooperation__wrapper">
+      <section class="cooperation main-footer__cooperation">
       <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
       <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
     </section>
+    </div>
     <section class="map">
       <h2 class="visually-hidden">Как нас найти.</h2>
       <iframe
@@ -170,7 +174,7 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
