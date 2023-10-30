@@ -89,49 +89,87 @@
       </ul>
     </section>
     <section class="example">
-      <h2 class="example__title title">Живой пример</h2>
-      <div class="example__wrapper">
-        <div class="example__content-wrapper">
-          <p class="example__text description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
-            по-прежнему спит по 16 часов в день.</p>
-          <div class="example__table">
-            <dl class="example__list">
-              <div class="example__item">
-                <dt class="example__number">5 кг</dt>
-                <dd class="example__description">снижение веса</dd>
-              </div>
-              <div class="example__item">
-                <dt class="example__number">60 дней</dt>
-                <dd class="example__description">затрачено времени</dd>
-              </div>
-            </dl>
-            <p class="example__cost-text">Затраты на питание: <span class="example__price">15 000 РУБ. </span></p>
+      <div class="example__content-container">
+        <h2 class="example__title title"><span>Живой пример</span></h2>
+        <div class="example__wrapper">
+          <div class="example__special-wrapper">
+            <p class="example__text description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+              Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
+              по-прежнему спит по 16 часов в день.</p>
+            <div class="example__table">
+              <dl class="example__list">
+                <div class="example__item">
+                  <dt class="example__number">5 кг</dt>
+                  <dd class="example__description">снижение веса</dd>
+                </div>
+                <div class="example__item">
+                  <dt class="example__number">60 дней</dt>
+                  <dd class="example__description">затрачено времени</dd>
+                </div>
+              </dl>
+              <p class="example__cost-text">Затраты на питание: <span class="example__price">15 000 РУБ. </span></p>
+            </div>
           </div>
-          <div class="example__cat-slider cat-slider">
-            <button class="cat-slider__button">
-              <span class="visually-hidden">Сравнить.</span>
-            </button>
-            <img class="cat-slider__image" src="img/cat-slider.png" width="280" height="256" alt="Коты">
-          </div>
+        </div>
+      </div>
+      <div class="example__cat-slider ">
+        <div class="slider">
+          <ul class="slider__list">
+            <li class="slider__item slider__item--before">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="/img/slider/before-tablet.webp 1x, /img/slider/before-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="/img/slider/before-mobile.webp 1x, /img/slider/before-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="/img/slider/before-tablet.png 1x, /img/slider/before-tablet@2x.png 2x">
+                <img class="slider__image" src="/img/slider/before-mobile.png" alt="До. Толстый кот."
+                  srcset="/img/slider/before-mobile@2x.png 2x">
+              </picture>
+            </li>
+            <li class="slider__item slider__item--after">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="/img/slider/after-tablet.webp 1x, /img/slider/after-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="/img/slider/after-mobile.webp 1x, /img/slider/after-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="/img/slider/after-tablet.png 1x, /img/slider/after-tablet@2x.png 2x">
+                <img class="slider__image" src="/img/slider/after-mobile.png" alt="После. Худой кот."
+                  srcset="/img/slider/after-mobile@2x.png 2x">
+              </picture>
+            </li>
+          </ul>
+          <button class="slider__button">
+            <span class="visually-hidden">Сравнить.</span>
+          </button>
         </div>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="cooperation__wrapper">
-      <section class="cooperation main-footer__cooperation">
-      <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-      <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
-    </section>
+    <div class="cooperation__map-wrapper">
+      <div class="cooperation__wrapper">
+        <section class="cooperation main-footer__cooperation">
+          <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+          <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+        </section>
+      </div>
+      <section class="map cooperation__map">
+        <h2 class="visually-hidden">Как нас найти.</h2>
+        <div class="map__wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198202!2d30.32047247735734!3d59.938719162093534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694419799814!5m2!1sru!2sru"
+            width="320" height="362" allowfullscreen=""
+            title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/map/map-desktop.jpg 1x, img/map/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg 1x, img/map/map-tablet@2x.jpg 2x">
+            <img class="map__image" src="img/map/map-mobile.jpg" srcset="img/map/map-mobile@2x.jpg 2x" alt="Карта.">
+          </picture>
+        </div>
+      </section>
     </div>
-    <section class="map">
-      <h2 class="visually-hidden">Как нас найти.</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198202!2d30.32047247735734!3d59.938719162093534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694419799814!5m2!1sru!2sru"
-        width="320" height="362" allowfullscreen=""
-        title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
-    </section>
     <div class="main-footer__wrapper">
       <a href="index.html">
         <img class="main-footer__logo" src="img/logo-text.svg" width="128" height="24" alt="Логотип.">

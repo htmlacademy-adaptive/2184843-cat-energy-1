@@ -1,11 +1,37 @@
+.map__wrapper {
+  position: relative;
+  height: 362px;
+}
+
+.map__image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  height: 362px;
+  object-fit: cover;
+}
+
 .map iframe {
   border: none;
   display: block;
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 @media (min-width: @tablet-width) {
+  .map__wrapper,
+  .map__image,
   .map iframe {
     height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__wrapper,
+  .map__image,
+  .map iframe {
+    height: 100%;
   }
 }
