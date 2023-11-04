@@ -1,5 +1,5 @@
-.comment-group {
-  padding: 26px 20px 19px;
+.comment-group__content-wrapper {
+  margin: 38px 20px 0;
 }
 
 .comment-group__textarea {
@@ -9,20 +9,28 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 14px;
+  padding: 14px 14px 10px;
   border: 1px solid @light-grey;
   box-sizing: border-box;
   width: 100%;
 }
 
 @media (min-width: @tablet-width) {
-  .comment-group {
-    padding: 0 70px;
+  .comment-group__content-wrapper {
+    margin: 87px 70px 0;
+  }
+
+  .comment-group__textarea {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px;
+    height: 175px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .comment-group {
-    padding: 0 110px;
+  .comment-group__content-wrapper {
+    margin: 77px auto 0;
+    width: 1220px;
   }
 }

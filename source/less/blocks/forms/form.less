@@ -4,6 +4,14 @@
   border: none;
 }
 
+.form__group-title {
+  width: 100%;
+
+  & span {
+    max-width: 185px;
+  }
+}
+
 .form__list {
   padding: 0;
   margin: 0;
@@ -13,6 +21,10 @@
 .form__button {
   width: 100%;
   box-sizing: border-box;
+}
+
+.form__button-wrapper {
+  margin: 0 20px;
 }
 
 .form__text {
@@ -34,6 +46,11 @@
   .form__group-title {
     font-size: 36px;
     line-height: 36px;
+    width: calc(100% - 80px);
+
+    & span {
+      max-width: unset;
+    }
   }
 
   .form__name-group {
@@ -45,37 +62,42 @@
   }
 
   .form__contacts-group {
-    margin-bottom: 65px;
+    margin-bottom: 25px;
   }
 
   .form__comment-group {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   .form__additional-items-group {
-    margin-bottom: 52px;
+    margin-bottom: 30px;
   }
 
   .form__button-wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
     width: 628px;
     margin: 0 auto;
   }
 
   .form__button {
     width: 284px;
-    padding: 14px 45px;
+    padding: 17px 45px;
+    font-size: 20px;
   }
 
   .form__text {
-    margin: 0;
+    margin: 0 0 0 58px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .form__container {
+    margin-bottom: 78px;
+  }
+
   .form__group-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -84,15 +106,19 @@
     margin: 0 auto;
   }
 
-  .form__contacts-group {
-    margin-bottom: 70px;
+  .form__group-title {
+    width: calc(100% - 140px);
+  }
+
+  .form__comment-group {
+    margin-bottom: 67px;
   }
 
   .form__button-wrapper {
     justify-content: flex-start;
     width: 1220px;
     margin: 0 auto;
-    gap: 0 80px;
+    gap: 0 20px;
   }
 
   .form__button {
