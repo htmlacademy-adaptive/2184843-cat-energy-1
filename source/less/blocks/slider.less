@@ -1,0 +1,165 @@
+.slider {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.slider__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 280px;
+  height: 265px;
+  position: relative;
+  z-index: 5;
+}
+
+.slider__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: width 2s ease;
+}
+
+.slider__item--before {
+  z-index: 10;
+  width: 50%;
+  overflow: hidden;
+  background-color: #eaeaea;
+}
+
+.slider__item--after {
+  z-index: 5;
+  background-color: #eaeaea;
+}
+
+.slider--after .slider__item--before {
+  width: 0;
+}
+
+.slider--before .slider__item--before {
+  width: 100%;
+}
+
+.slider__image {
+  width: 280px;
+  height: 256px;
+}
+
+.slider__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 2px solid #666666;
+  z-index: 10;
+  border-radius: 50%;
+  transition: left 2s ease;
+
+  &:hover {
+    border-color: @basic-green;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &::before {
+    content: "";
+    width: 4px;
+    border-right: 4px solid #666666;
+    border-radius: 4px;
+    height: 256px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover::before {
+    border-color: @basic-green;
+  }
+
+  &::after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    background-image: url("../img/slider/slider-arrows.svg");
+    background-size: 24px 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+
+  &:hover::after {
+    background-image: url("../img/slider/slider-arrows-active.svg");
+  }
+}
+
+.slider--after .slider__button {
+  left: 0;
+}
+
+.slider--before .slider__button {
+  left: 100%;
+}
+
+
+@media (min-width: @tablet-width) {
+  .slider {
+    width: 560px;
+    height: 512px;
+  }
+
+  .slider__list {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider__item {
+    background-color: #eaeaea;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 150px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+  }
+
+  .slider__image {
+    width: 560px;
+    height: 512px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .slider__button {
+    &::before {
+      height: 512px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__item {
+    background-color: #f2f2f2;
+    &::before {
+      height: 136px;
+    }
+  }
+}

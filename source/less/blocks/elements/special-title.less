@@ -5,11 +5,14 @@
   padding: 0;
   margin: 0;
   position: relative;
-  width: 100%;
 
   & span {
     background-color: @white;
     padding: 0 20px;
+    background-color: #fff;
+    padding: 0 20px;
+    display: inline-block;
+    max-width: 260px;
   }
 
   &::after {
@@ -23,3 +26,30 @@
     z-index: -1;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .special-title {
+    padding: 0 40px;
+
+    & span {
+      padding: 0 30px;
+      max-width: unset;
+    }
+
+    &::after {
+      top: 22px;
+
+    }
+  }
+}
+
+  @media (min-width: @desktop-width) {
+    .special-title {
+      padding: 0 70px;
+
+      & span {
+        padding: 0 40px;
+      }
+
+    }
+  }

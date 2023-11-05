@@ -40,7 +40,7 @@
 
 @media (min-width: @tablet-width) {
   .cooperation {
-    padding: 56px 70px;
+    padding: 61px 70px;
   }
 
   .cooperation__title {
@@ -90,9 +90,19 @@
   .cooperation__wrapper {
     width: 1220px;
     margin: 0 auto;
+    z-index: 15;
+    position: relative;
+    padding: 95px 0 106px;
+  }
+
+  .cooperation__map-wrapper {
+    position: relative;
+  }
+
+  .cooperation__map {
     position: absolute;
-    top: 95px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
 }
