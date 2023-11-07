@@ -3,4 +3,17 @@
   font-weight: 400;
   padding: 0;
   margin: 0;
+  position: relative;
+}
+
+@media (min-width: @desktop-width) {
+  .page__body--index::before {
+    content: "";
+    width: 50%;
+    height: 600px;
+    background-color: #63a73c;
+    position: absolute;
+    left: 50%;
+    top: 0;
+  }
 }

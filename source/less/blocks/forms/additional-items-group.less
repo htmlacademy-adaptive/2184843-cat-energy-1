@@ -18,6 +18,10 @@
     margin: 57px 70px 10px;
     gap: 20px 0;
   }
+
+  .additional-items-group__item .control__label {
+    max-width: 160px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -26,9 +30,10 @@
   }
 
   .additional-items-group__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    gap: 20px 95px;
+    justify-content: start;
     width: 1220px;
     margin: 55px auto 50px;
   }

@@ -73,12 +73,13 @@
     padding: 0;
   }
 
-  .example__content-container {
+  .example__title {
     padding: 0 30px;
+    margin-bottom: 59px;
   }
 
-  .example__title {
-    margin-bottom: 59px;
+  .example__special-wrapper {
+    padding: 0 30px;
   }
 
   .example__text {
@@ -158,6 +159,7 @@
   .example {
     padding: 0;
     position: relative;
+    background-color: #f2f2f2;
   }
 
   .example__content-container {
@@ -165,8 +167,9 @@
   }
 
   .example__wrapper {
-    background-color: @basic-grey;
     position: relative;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .example__special-wrapper {
@@ -182,12 +185,16 @@
   }
 
   .example__title {
-    width: 1220px;
-    margin: 0 auto 76px;
+    margin: 0;
+    padding-bottom: 75px;
+    background: #ffffff;
 
     & span {
-      width: 540px;
+      width: 1220px;
       display: block;
+      margin: 0 auto;
+      padding-right: 570px;
+      box-sizing: border-box;
     }
   }
 
@@ -223,8 +230,8 @@
 
   .example__cat-slider {
     position: absolute;
-    top: 0;
-    right: 111px;
+    top: -135px;
+    right: 0;
     padding: 0;
   }
 }

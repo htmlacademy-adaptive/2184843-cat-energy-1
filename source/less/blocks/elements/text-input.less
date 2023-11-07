@@ -24,6 +24,7 @@
   }
 }
 
+
 .text-input__label {
   color: @dark-grey;
   font-family: @Oswald;
@@ -31,8 +32,9 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  align-self: center;
   white-space: nowrap;
-  padding-top: 14px;
+  max-width: 160px;
 }
 
 .text-input__input {
@@ -54,13 +56,23 @@
     line-height: 18px;
     text-transform: uppercase;
   }
+
+  /*   Убирает стрелки у полей number */
+  &[type="number"] {
+    appearance: textfield;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .text-input__label {
     font-size: 20px;
     line-height: normal;
-    padding-top: 11px;
+    max-width: 270px;
   }
 
   .text-input {

@@ -57,11 +57,11 @@
                 <input type="text" class="text-input__input" name="name" id="name" placeholder="Барсик" required>
               </li>
               <li class="text-input name-group__item">
-                <label for="weight" class="text-input__label">Вес (кг):*</label>
+                <label for="weight" class="text-input__label">Вес&nbsp;(кг):*</label>
                 <input type="number" class="text-input__input" name="weight" id="weight" placeholder="7" required>
               </li>
               <li class="text-input name-group__item">
-                <label for="age" class="text-input__label">Возраст (лет):</label>
+                <label for="age" class="text-input__label">Возраст&nbsp;(лет):</label>
                 <input type="number" class="text-input__input" name="age" id="age" placeholder="7">
               </li>
             </ul>
@@ -96,7 +96,10 @@
         </div>
 
         <fieldset class="form__group form__contacts-group contacts-group">
-          <legend class="special-title form__group-title"><span>Контактные данные (владельца&nbsp;кота)</span>
+          <legend class="special-title form__group-title">
+            <span class="special-title__container">
+              <span class="special-title__text">Контактные данные (владельца&nbsp;кота)</span>
+            </span>
           </legend>
           <ul class="form__list contacts-group__list">
             <li class="text-input text-input--email contacts-group__item">
@@ -113,7 +116,11 @@
         </fieldset>
 
         <fieldset class="form__group form__comment-group comment-group">
-          <legend class="special-title form__group-title"><span>Комментарий</span></legend>
+          <legend class="special-title form__group-title">
+            <span class="special-title__container">
+              <span class="special-title__text">Комментарий</span>
+            </span>
+          </legend>
           <div class="comment-group__content-wrapper">
             <label class="visually-hidden" for="comment">Заполните поле.</label>
             <textarea class="comment-group__textarea" id="comment" name="comment" rows="7"
@@ -122,7 +129,11 @@
         </fieldset>
 
         <fieldset class="form__group form__additional-items-group additional-items-group">
-          <legend class="special-title form__group-title"><span>Дополнительно</span></legend>
+          <legend class="special-title form__group-title">
+            <span class="special-title__container">
+              <span class="special-title__text">Дополнительно</span>
+            </span>
+          </legend>
           <ul class="form__list additional-items-group__list">
             <li class="additional-items-group__item">
               <label class="control">
