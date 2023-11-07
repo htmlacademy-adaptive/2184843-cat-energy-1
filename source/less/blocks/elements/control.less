@@ -5,6 +5,27 @@
   cursor: pointer;
 }
 
+.control__input:hover+.control__mark {
+  border: 1px solid #bababa;
+}
+
+.control__input:disabled~.control__mark,
+.control__input:disabled~.control__label {
+  opacity: 0.3;
+}
+
+.control__input:focus+.control__mark {
+  outline: 2px solid @black;
+}
+
+.control__input:focus:not(:focus-visible)+.control__mark {
+  outline: none;
+}
+
+.control__input:focus-visible+.control__mark {
+  outline: 2px solid @black;
+}
+
 .control__label {
   color: @dark-grey;
   font-size: 16px;
@@ -22,11 +43,11 @@
   position: relative;
 }
 
-.control__input[type="radio"] + .control__mark {
+.control__input[type="radio"]+.control__mark {
   border-radius: 50%;
 }
 
-.control__input[type="radio"]:checked + .control__mark::before {
+.control__input[type="radio"]:checked+.control__mark::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -37,7 +58,7 @@
   border-radius: 50%;
 }
 
-.control__input[type="checkbox"]:checked + .control__mark::before {
+.control__input[type="checkbox"]:checked+.control__mark::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -64,14 +85,14 @@
     height: 40px;
   }
 
-  .control__input[type="radio"]:checked + .control__mark::before {
+  .control__input[type="radio"]:checked+.control__mark::before {
     top: 12px;
     left: 12px;
     width: 16px;
     height: 16px;
   }
 
-  .control__input[type="checkbox"]:checked + .control__mark::before {
+  .control__input[type="checkbox"]:checked+.control__mark::before {
     top: 12px;
     left: 7px;
     width: 24px;
