@@ -10,6 +10,10 @@
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml"> <!-- svg -->
   <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
 </head>
 
 <body class="page__body">
@@ -57,11 +61,11 @@
                 <input type="text" class="text-input__input" name="name" id="name" placeholder="Барсик" required>
               </li>
               <li class="text-input name-group__item">
-                <label for="weight" class="text-input__label">Вес (кг):*</label>
+                <label for="weight" class="text-input__label">Вес&nbsp;(кг):*</label>
                 <input type="number" class="text-input__input" name="weight" id="weight" placeholder="7" required>
               </li>
               <li class="text-input name-group__item">
-                <label for="age" class="text-input__label">Возраст (лет):</label>
+                <label for="age" class="text-input__label">Возраст&nbsp;(лет):</label>
                 <input type="number" class="text-input__input" name="age" id="age" placeholder="7">
               </li>
             </ul>
@@ -94,13 +98,15 @@
             </ul>
           </fieldset>
         </div>
-
         <fieldset class="form__group form__contacts-group contacts-group">
-          <legend class="special-title form__group-title"><span>Контактные данные (владельца&nbsp;кота)</span>
+          <legend class="special-title form__group-title">
+            <span class="special-title__container">
+              <span class="special-title__text">Контактные данные (владельца&nbsp;кота)</span>
+            </span>
           </legend>
           <ul class="form__list contacts-group__list">
             <li class="text-input text-input--email contacts-group__item">
-              <label for="e-mail" class="text-input__label">E-mail:*</label>
+              <label for="e-mail" class="text-input__label">E&nbsp;-&nbsp;mail:*</label>
               <input type="email" class="text-input__input" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com"
                 required>
             </li>
@@ -113,7 +119,11 @@
         </fieldset>
 
         <fieldset class="form__group form__comment-group comment-group">
-          <legend class="special-title form__group-title"><span>Комментарий</span></legend>
+          <legend class="special-title form__group-title">
+            <span class="special-title__container">
+              <span class="special-title__text">Комментарий</span>
+            </span>
+          </legend>
           <div class="comment-group__content-wrapper">
             <label class="visually-hidden" for="comment">Заполните поле.</label>
             <textarea class="comment-group__textarea" id="comment" name="comment" rows="7"
@@ -122,7 +132,11 @@
         </fieldset>
 
         <fieldset class="form__group form__additional-items-group additional-items-group">
-          <legend class="special-title form__group-title"><span>Дополнительно</span></legend>
+          <legend class="special-title form__group-title">
+            <span class="special-title__container">
+              <span class="special-title__text">Дополнительно</span>
+            </span>
+          </legend>
           <ul class="form__list additional-items-group__list">
             <li class="additional-items-group__item">
               <label class="control">
@@ -147,7 +161,6 @@
                 <span class="control__label">Молоко</span>
               </label>
             </li>
-
             <li class="additional-items-group__item">
               <label class="control">
                 <input class="control__input visually-hidden" type="checkbox" name="additional-items" value="Витамины">
@@ -163,7 +176,6 @@
         </div>
       </form>
     </section>
-
   </main>
   <footer class="main-footer">
     <div class="cooperation__map-wrapper">
@@ -189,7 +201,7 @@
       </section>
     </div>
     <div class="main-footer__wrapper">
-      <a href="index.html">
+      <a class="main-footer__logo-link" href="index.html">
         <img class="main-footer__logo" src="img/logo-text.svg" width="128" height="24" alt="Логотип.">
       </a>
       <div class=" main-footer__social social">

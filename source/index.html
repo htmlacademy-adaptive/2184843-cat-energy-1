@@ -10,9 +10,13 @@
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml"> <!-- svg -->
   <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--index">
   <header class="main-header main-header__wrapper">
     <a class="logo main-header__logo" href="#">
       <picture>
@@ -89,7 +93,6 @@
       </ul>
     </section>
     <section class="example">
-      <div class="example__content-container">
         <h2 class="example__title title"><span>Живой пример</span></h2>
         <div class="example__wrapper">
           <div class="example__special-wrapper">
@@ -110,41 +113,40 @@
               <p class="example__cost-text">Затраты на питание: <span class="example__price">15 000 РУБ. </span></p>
             </div>
           </div>
+          <div class="example__cat-slider ">
+            <div class="slider">
+              <ul class="slider__list">
+                <li class="slider__item slider__item--before">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="/img/slider/before-tablet.webp 1x, /img/slider/before-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="/img/slider/before-mobile.webp 1x, /img/slider/before-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="/img/slider/before-tablet.png 1x, /img/slider/before-tablet@2x.png 2x">
+                    <img class="slider__image" src="/img/slider/before-mobile.png" alt="До. Толстый кот."
+                      srcset="/img/slider/before-mobile@2x.png 2x">
+                  </picture>
+                </li>
+                <li class="slider__item slider__item--after">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="/img/slider/after-tablet.webp 1x, /img/slider/after-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="/img/slider/after-mobile.webp 1x, /img/slider/after-mobile@2x.webp 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="/img/slider/after-tablet.png 1x, /img/slider/after-tablet@2x.png 2x">
+                    <img class="slider__image" src="/img/slider/after-mobile.png" alt="После. Худой кот."
+                      srcset="/img/slider/after-mobile@2x.png 2x">
+                  </picture>
+                </li>
+              </ul>
+              <button class="slider__button">
+                <span class="visually-hidden">Сравнить.</span>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="example__cat-slider ">
-        <div class="slider">
-          <ul class="slider__list">
-            <li class="slider__item slider__item--before">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="/img/slider/before-tablet.webp 1x, /img/slider/before-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="/img/slider/before-mobile.webp 1x, /img/slider/before-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)"
-                  srcset="/img/slider/before-tablet.png 1x, /img/slider/before-tablet@2x.png 2x">
-                <img class="slider__image" src="/img/slider/before-mobile.png" alt="До. Толстый кот."
-                  srcset="/img/slider/before-mobile@2x.png 2x">
-              </picture>
-            </li>
-            <li class="slider__item slider__item--after">
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="/img/slider/after-tablet.webp 1x, /img/slider/after-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="/img/slider/after-mobile.webp 1x, /img/slider/after-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)"
-                  srcset="/img/slider/after-tablet.png 1x, /img/slider/after-tablet@2x.png 2x">
-                <img class="slider__image" src="/img/slider/after-mobile.png" alt="После. Худой кот."
-                  srcset="/img/slider/after-mobile@2x.png 2x">
-              </picture>
-            </li>
-          </ul>
-          <button class="slider__button">
-            <span class="visually-hidden">Сравнить.</span>
-          </button>
-        </div>
-      </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -171,7 +173,7 @@
       </section>
     </div>
     <div class="main-footer__wrapper">
-      <a href="index.html">
+      <a class="main-footer__logo-link" href="index.html">
         <img class="main-footer__logo" src="img/logo-text.svg" width="128" height="24" alt="Логотип.">
       </a>
       <div class=" main-footer__social social">

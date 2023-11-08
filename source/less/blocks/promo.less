@@ -34,6 +34,11 @@
     top: 0;
     left: 0;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background: #62a53a url("../img/index-background@2x.jpg") no-repeat center top;
+      background-size: auto 100%;
+    }
   }
 }
 
@@ -166,11 +171,16 @@
       content: "";
       width: 50%;
       height: calc(100% + 117px);
-      background: @basic-green url("../img/index-background-desktop.jpg") no-repeat center;
+      background: #68b738 url("../img/index-background-desktop.jpg") no-repeat right top;
       background-size: cover;
       position: absolute;
       top: -117px;
       right: 0;
+
+      @media (min-resolution: 2dppx) {
+        background: #68b738 url("../img/index-background-desktop@2x.png") no-repeat right top;
+        background-size: cover;
+      }
     }
   }
 
