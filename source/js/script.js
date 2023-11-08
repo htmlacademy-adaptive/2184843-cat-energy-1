@@ -26,6 +26,5 @@ if (sliderButton) {
       slider.classList.toggle('slider--after');
       slider.classList.toggle('slider--before');
     }
-    
   });
 }
