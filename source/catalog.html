@@ -16,8 +16,8 @@
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
 </head>
 
-<body class="page__body">
-  <header class="main-header main-header__wrapper main-header__wrapper--catalog">
+<body class="page__body page-catalog">
+  <header class="main-header main-header--catalog">
     <a class="logo main-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
@@ -42,7 +42,7 @@
       </ul>
     </nav>
   </header>
-  <main class="page-catalog">
+  <main class="page-catalog__content">
     <h1 class="inner-title page-catalog__title">Каталог продукции</h1>
     <section class="products page-catalog__products">
       <h2 class="visually-hidden">Товары.</h2>
@@ -65,7 +65,7 @@
                 alt="Питание со вкусом курицы 500 грамм." srcset="img/products/mobile/pro-chicken-500-mobile@2x.png 2x">
             </picture>
           </a>
-          <div class="description-list__wrapper">
+          <div class="products__description-list-wrapper">
             <a class="products__title-link" href="product.html">
               <h3 class="products__title">Cat Energy PRO 500 г</h3>
             </a>
@@ -99,7 +99,7 @@
                 srcset="img/products/mobile/pro-chicken-1000-mobile@2x.png 2x">
             </picture>
           </a>
-          <div class="description-list__wrapper">
+          <div class="products__description-list-wrapper">
             <a class="products__title-link" href="product.html">
               <h3 class="products__title">Cat Energy PRO 1000 г</h3>
             </a>
@@ -132,7 +132,7 @@
                 alt="Питание со вкусом рыбы 500 грамм." srcset="img/products/mobile/pro-fish-500-mobile@2x.png 2x">
             </picture>
           </a>
-          <div class="description-list__wrapper">
+          <div class="products__description-list-wrapper">
             <a class="products__title-link" href="product.html">
               <h3 class="products__title">Cat Energy PRO 500 г</h3>
             </a>
@@ -165,7 +165,7 @@
                 alt="Питание со вкусом рыбы 1000 грамм." srcset="img/products/mobile/pro-fish-1000-mobile@2x.png 2x">
             </picture>
           </a>
-          <div class="description-list__wrapper">
+          <div class="products__description-list-wrapper">
             <a class="products__title-link" href="product.html">
               <h3 class="products__title">Cat Energy PRO 1000 г</h3>
             </a>
@@ -199,7 +199,7 @@
                 srcset="img/products/mobile/slim-buckwheat-500-mobile@2x.png 2x">
             </picture>
           </a>
-          <div class="description-list__wrapper">
+          <div class="products__description-list-wrapper">
             <a class="products__title-link" href="product.html">
               <h3 class="products__title">Cat Energy SLIM 500 г</h3>
             </a>
@@ -233,7 +233,7 @@
                 srcset="img/products/mobile/slim-buckwheat-1000-mobile@2x.png 2x">
             </picture>
           </a>
-          <div class="description-list__wrapper">
+          <div class="products__description-list-wrapper">
             <a class="products__title-link" href="product.html">
               <h3 class="products__title">Cat Energy SLIM 1000 г</h3>
             </a>
@@ -266,7 +266,7 @@
                 alt="Питание со вкусом риса 500 грамм." srcset="img/products/mobile/slim-rice-500-mobile@2x.png 2x">
             </picture>
           </a>
-          <div class="description-list__wrapper">
+          <div class="products__description-list-wrapper">
             <a class="products__title-link" href="product.html">
               <h3 class="products__title">Cat Energy SLIM 500 г</h3>
             </a>
@@ -298,7 +298,7 @@
         <ul class="additional-products__list">
           <li class="additional-products__item">
             <div class="additional-products__item-wrapper">
-              <h3 class="products__title">Сахарозаменитель</h3>
+              <h3 class="additional-products__item-title">Сахарозаменитель</h3>
               <dl class="additional-products__term-list">
                 <dt class="additional-products__term">1 упаковка (100 г)</dt>
                 <dd class="additional-products__value">200 ₽</dd>
@@ -308,7 +308,7 @@
           </li>
           <li class="additional-products__item">
             <div class="additional-products__item-wrapper">
-              <h3 class="products__title">Питьевая вода</h3>
+              <h3 class="additional-products__item-title">Питьевая вода</h3>
               <dl class="additional-products__term-list">
                 <dt class="additional-products__term">5 литров</dt>
                 <dd class="additional-products__value">50 ₽</dd>
@@ -318,7 +318,7 @@
           </li>
           <li class="additional-products__item">
             <div class="additional-products__item-wrapper">
-              <h3 class="products__title">Молоко</h3>
+              <h3 class="additional-products__item-title">Молоко</h3>
               <dl class="additional-products__term-list">
                 <dt class="additional-products__term">1 литр</dt>
                 <dd class="additional-products__value">100 ₽</dd>
@@ -328,7 +328,7 @@
           </li>
           <li class="additional-products__item">
             <div class="additional-products__item-wrapper">
-              <h3 class="products__title">Витамины</h3>
+              <h3 class="additional-products__item-title">Витамины</h3>
               <dl class="additional-products__term-list">
                 <dt class="additional-products__term">1 упаковка (30 г)</dt>
                 <dd class="additional-products__value">300 ₽</dd>
@@ -344,14 +344,14 @@
     </section>
   </main>
   <footer class="main-footer page-catalog__footer">
-    <div class="cooperation__map-wrapper">
-      <div class="cooperation__wrapper">
+    <div class="main-footer__map-wrapper">
+      <div class="main-footer__cooperation-wrapper">
         <section class="cooperation main-footer__cooperation cooperation--catalog">
           <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
         </section>
       </div>
-      <section class="map cooperation__map">
+      <section class="map main-footer__map">
         <h2 class="visually-hidden">Как нас найти.</h2>
         <div class="map__wrapper">
           <iframe

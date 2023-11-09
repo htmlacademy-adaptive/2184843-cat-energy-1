@@ -17,12 +17,15 @@
     background: none;
     display: flex;
     justify-content: space-between;
-    padding: 22px 34px 0 30px;
-  }
+    padding: 44px 34px 0 30px;
 
-  .main-header__wrapper {
-    margin-top: 22px;
-    margin-bottom: 60px;
+    &--catalog {
+      padding-top: 22px;
+    }
+
+    &--form {
+      padding-top: 22px;
+    }
   }
 
   .main-header__logo {
@@ -37,7 +40,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-header__wrapper {
+  .main-header {
     width: 1220px;
     margin: 0 auto;
     padding-top: 53px;
