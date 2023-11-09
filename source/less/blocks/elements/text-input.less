@@ -65,7 +65,7 @@
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    border-color: @special-light-grey;
     cursor: pointer;
   }
 
@@ -84,16 +84,16 @@
   &:disabled {
     cursor: default;
   }
+}
 
-  /*   Убирает стрелки у полей number */
-  &[type="number"] {
-    appearance: textfield;
-  }
+/*   Убирает стрелки у полей number */
+.text-input__input [type="number"] {
+  appearance: textfield;
+}
 
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    appearance: none;
-  }
+.text-input__input::-webkit-outer-spin-button,
+.text-input__input::-webkit-inner-spin-button {
+  appearance: none;
 }
 
 @media (min-width: @tablet-width) {
