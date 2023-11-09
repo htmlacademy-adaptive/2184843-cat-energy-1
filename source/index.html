@@ -17,8 +17,8 @@
 </head>
 
 <body class="page__body page__body--index">
-  <header class="main-header main-header__wrapper">
-    <a class="logo main-header__logo" href="#">
+  <header class="main-header">
+    <a class="logo main-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
@@ -61,13 +61,13 @@
           <h3 class="goals__title">Похудение</h3>
           <p class="goals__description description">Ваш кот весит больше собаки и почти утратил способность лазить по
             деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="goals__link" href="#">Каталог slim</a>
+          <a class="goals__link" href="catalog-slim.html">Каталог slim</a>
         </li>
         <li class="goals__item goals__item--pro">
           <h3 class="goals__title">Набор массы</h3>
           <p class="goals__description description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
             Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="goals__link" href="#">Каталог pro</a>
+          <a class="goals__link" href="catalog-pro.html">Каталог pro</a>
         </li>
       </ul>
     </section>
@@ -93,7 +93,9 @@
       </ul>
     </section>
     <section class="example">
-        <h2 class="example__title title"><span>Живой пример</span></h2>
+        <h2 class="example__title title">
+          <span class="example__title-text">Живой пример</span>
+        </h2>
         <div class="example__wrapper">
           <div class="example__special-wrapper">
             <p class="example__text description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
@@ -150,14 +152,14 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="cooperation__map-wrapper">
-      <div class="cooperation__wrapper">
+    <div class="main-footer__map-wrapper">
+      <div class="main-footer__cooperation-wrapper">
         <section class="cooperation main-footer__cooperation">
           <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
         </section>
       </div>
-      <section class="map cooperation__map">
+      <section class="map main-footer__map">
         <h2 class="visually-hidden">Как нас найти.</h2>
         <div class="map__wrapper">
           <iframe

@@ -29,6 +29,14 @@
   margin: 0 0 14px;
 }
 
+.products__title-link {
+  text-decoration: none;
+}
+
+.products__description-list-wrapper {
+  width: 140px;
+}
+
 .products__button {
   width: 100%;
   margin-top: 12px;
@@ -101,12 +109,26 @@
     left: 62px;
   }
 
+  .products__image-link:focus::after {
+    content: "";
+    position: absolute;
+    border: 2px solid @black;
+    width: 320px;
+    height: 215px;
+    top: -80px;
+    left: 0;
+  }
+
   .products__title {
     font-size: 20px;
     line-height: 24px;
     width: 135px;
     text-align: center;
     margin: 0 auto 13px;
+  }
+
+  .products__description-list-wrapper {
+    width: 100%;
   }
 
   .products__description-list {
@@ -155,6 +177,10 @@
 
   .products__image {
     left: 38px;
+  }
+
+  .products__image-link:focus::after {
+    width: 242px;
   }
 
   .products__title {
